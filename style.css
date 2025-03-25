@@ -23,6 +23,7 @@
 }
 body {
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 body * {
   font-family: "Inter", sans-serif;
@@ -60,7 +61,7 @@ body * {
   background: var(--switch-url) white no-repeat center;
   border: 0;
   border-radius: 50%;
-  
+
   position: absolute;
   z-index: 1;
   left: 0;
@@ -134,4 +135,12 @@ footer {
   padding: 14px 0;
   text-align: center;
   font-size: 12px;
+}
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg)
+  }
 }
